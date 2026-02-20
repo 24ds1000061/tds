@@ -72,7 +72,7 @@ async def get_latency_metrics(request: Request):
             "breaches": breaches
         }
 
-    return results
+    return {"regions": results}
 
 @app.get("/")
 def read_root():
