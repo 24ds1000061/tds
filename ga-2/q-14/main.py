@@ -6,12 +6,12 @@ import math
 
 app = FastAPI()
 
-# Enable CORS
+# Enable CORS correctly for wildcard origins
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["POST", "OPTIONS"],
+    allow_credentials=False,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
@@ -30,7 +30,7 @@ def calculate_p95(latencies):
     idx = math.ceil(0.95 * n) - 1
     return sorted_latencies[max(0, idx)]
 
-@app.post("/api/latency")
+@app.post("/api")
 async def get_latency_metrics(request: Request):
     body = await request.json()
     regions = body.get("regions", [])
