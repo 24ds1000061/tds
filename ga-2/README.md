@@ -37,3 +37,10 @@
 - **Cache Key:** `cache-5d24ba9`.
 - **Step Name:** `prime-cache-5d24ba9` (echoes cache status).
 - **Repo URL:** [https://github.com/24ds1000061/TDS](https://github.com/24ds1000061/TDS)
+
+## Question 8: Dependabot
+**Task:** Configure Dependabot for automatic dependency updates.
+- **Project Type:** Python (pip).
+- **Files:** Created `requirements.txt` and `.github/dependabot.yml`.
+- **Config:** Weekly updates for the root directory with `deps` prefix.
+- **Repo URL:** [https://github.com/24ds1000061/TDS](https://github.com/24ds1000061/TDS)
