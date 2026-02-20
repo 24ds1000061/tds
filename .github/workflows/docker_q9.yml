@@ -25,4 +25,4 @@ jobs:
         with:
           context: ./ga-2/q-9
           push: true
-          tags: parasuramaniitm/tds-q9:24ds1000061
+          tags: parasuramaniitm/tds-submission-24ds1000061:24ds1000061
