@@ -84,3 +84,10 @@
 - **Implementation:** `ga-2/q-14/main.py`
 - **Vercel Config:** `None (Auto-detect)`
 - **URL:** [https://tds-ga2-q14-final.vercel.app/api](https://tds-ga2-q14-final.vercel.app/api) (Placeholder - please deploy from ga-2/q-14/)
+
+## Question 17: Localtunnel
+**Task:** Create a localtunnel to serve the student email address.
+- **Email:** 24ds1000061@ds.study.iitm.ac.in
+- **Local Server:** Port 8080
+- **URL:** [https://lovely-foxes-rhyme.loca.lt](https://lovely-foxes-rhyme.loca.lt)
+- **Tunnel Password (IP):** 92.97.105.4
