@@ -30,7 +30,7 @@ def calculate_p95(latencies):
     idx = math.ceil(0.95 * n) - 1
     return sorted_latencies[max(0, idx)]
 
-@app.post("/api")
+@app.post("/api/latency")
 async def get_latency_metrics(request: Request):
     body = await request.json()
     regions = body.get("regions", [])
