@@ -68,3 +68,11 @@
 **Task:** Publish a showcase using GitHub Gist with email verification.
 - **Email Bypass:** Used `<!--email_off-->` tags in Markdown.
 - **Status:** Prepared in `ga-2/q-12/showcase.md`.
+
+## Question 13: FastAPI Student API
+**Task:** Create a FastAPI server to serve student data from a CSV file with filtering and CORS.
+- **Endpoint:** `/api`
+- **Filtering:** Supports multi-class filtering via query params (e.g., `?class=1A&class=1B`).
+- **Data Source:** `q-fastapi.csv`
+- **Implementation:** `ga-2/q-13/main.py`
+- **URL:** [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
