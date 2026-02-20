@@ -1,9 +1,10 @@
-your url is: https://lovely-foxes-rhyme.loca.lt
+nohup: ignoring input
+your url is: https://happy-dodo-37.loca.lt
 /home/paras/.npm/_npx/75ac80b86e83d4a2/node_modules/localtunnel/bin/lt.js:81
     throw err;
     ^
 
-Error: connection refused: localtunnel.me:24741 (check your firewall settings)
+Error: connection refused: localtunnel.me:16217 (check your firewall settings)
     at Socket.<anonymous> (/home/paras/.npm/_npx/75ac80b86e83d4a2/node_modules/localtunnel/lib/TunnelCluster.js:52:11)
     at Socket.emit (node:events:508:28)
     at emitErrorNT (node:internal/streams/destroy:170:8)
