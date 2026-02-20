@@ -1,0 +1,8 @@
+t=2026-02-20T20:52:55+0400 lvl=info msg="no configuration paths supplied"
+t=2026-02-20T20:52:55+0400 lvl=info msg="using configuration at default config path" path=/home/paras/snap/ngrok/350/.config/ngrok/ngrok.yml
+t=2026-02-20T20:52:55+0400 lvl=info msg="open config file" path=/home/paras/snap/ngrok/350/.config/ngrok/ngrok.yml err=nil
+t=2026-02-20T20:52:56+0400 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-02-20T20:52:56+0400 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-02-20T20:52:56+0400 lvl=info msg="client session established" obj=tunnels.session
+t=2026-02-20T20:52:56+0400 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-02-20T20:52:57+0400 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8080 url=https://choleric-zana-dentally.ngrok-free.dev

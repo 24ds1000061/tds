@@ -89,5 +89,5 @@
 **Task:** Create a localtunnel to serve the student email address.
 - **Email:** 24ds1000061@ds.study.iitm.ac.in
 - **Local Server:** Port 8080
-- **URL:** [https://lovely-foxes-rhyme.loca.lt](https://lovely-foxes-rhyme.loca.lt)
+- **URL:** [https://thick-streets-relate.loca.lt](https://thick-streets-relate.loca.lt)
 - **Tunnel Password (IP):** 92.97.105.4
