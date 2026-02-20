@@ -58,3 +58,13 @@
 - **Config:** Port 7007, UID 1000 user.
 - **Description:** Included `deployment-ready-ga2-a34366`.
 - **URL:** [https://huggingface.co/spaces/ParasuramanIITM/ga2-a34366](https://huggingface.co/spaces/ParasuramanIITM/ga2-a34366)
+
+## Question 11: Codespaces
+**Task:** Create a devcontainer configuration.
+- **Repo:** [https://github.com/24ds1000061/tds-ga-2-q-11](https://github.com/24ds1000061/tds-ga-2-q-11)
+- **Status:** Configured with UV and Python.
+
+## Question 12: GitHub Gist
+**Task:** Publish a showcase using GitHub Gist with email verification.
+- **Email Bypass:** Used `<!--email_off-->` tags in Markdown.
+- **Status:** Prepared in `ga-2/q-12/showcase.md`.
