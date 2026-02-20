@@ -1,0 +1,10 @@
+category: resources
+
+KNOWLEDGE ARTICLES - File 3
+
+This is a test file for the reorganization exercise.
+Path: archive/file-name/file03.txt
+Category: resources
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

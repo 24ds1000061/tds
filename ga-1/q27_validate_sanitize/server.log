@@ -1,0 +1,338 @@
+INFO:     Started server process [50254]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:security:[RL] NEW USER: test-user-353:127.0.0.1 | tokens=9
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.00 tokens | now=9.00/9
+INFO:security:[RL] ALLOW #1: test-user-353:127.0.0.1 | window=1/37 | tokens=8.00
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60562 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=8.02/9
+INFO:security:[RL] ALLOW #2: test-user-353:127.0.0.1 | window=2/37 | tokens=7.02
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60574 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=7.03/9
+INFO:security:[RL] ALLOW #3: test-user-353:127.0.0.1 | window=3/37 | tokens=6.03
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60552 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=6.04/9
+INFO:security:[RL] ALLOW #4: test-user-353:127.0.0.1 | window=4/37 | tokens=5.04
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60590 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.07 tokens | now=5.12/9
+INFO:security:[RL] ALLOW #5: test-user-353:127.0.0.1 | window=5/37 | tokens=4.12
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60596 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=4.14/9
+INFO:security:[RL] ALLOW #6: test-user-353:127.0.0.1 | window=6/37 | tokens=3.14
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60598 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=3.16/9
+INFO:security:[RL] ALLOW #7: test-user-353:127.0.0.1 | window=7/37 | tokens=2.16
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60592 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=2.18/9
+INFO:security:[RL] ALLOW #8: test-user-353:127.0.0.1 | window=8/37 | tokens=1.18
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60610 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.05 tokens | now=1.23/9
+INFO:security:[RL] ALLOW #9: test-user-353:127.0.0.1 | window=9/37 | tokens=0.23
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60632 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=0.24/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.24 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60624 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.26/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.26 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60638 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.28/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.28 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60640 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.05 tokens | now=0.33/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.33 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60654 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.10 tokens | now=0.42/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.42 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60658 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=0.45/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.45 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60686 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.47/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.47 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60700 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=0.48/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.48 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60670 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=0.49/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.49 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071336}
+INFO:     127.0.0.1:60696 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +7.59 tokens | now=8.07/9
+INFO:security:[RL] ALLOW #10: test-user-353:127.0.0.1 | window=10/37 | tokens=7.07
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60706 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=7.09/9
+INFO:security:[RL] ALLOW #11: test-user-353:127.0.0.1 | window=11/37 | tokens=6.09
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60724 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=6.10/9
+INFO:security:[RL] ALLOW #12: test-user-353:127.0.0.1 | window=12/37 | tokens=5.10
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60710 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.06 tokens | now=5.16/9
+INFO:security:[RL] ALLOW #13: test-user-353:127.0.0.1 | window=13/37 | tokens=4.16
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60734 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.05 tokens | now=4.21/9
+INFO:security:[RL] ALLOW #14: test-user-353:127.0.0.1 | window=14/37 | tokens=3.21
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60740 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=3.23/9
+INFO:security:[RL] ALLOW #15: test-user-353:127.0.0.1 | window=15/37 | tokens=2.23
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60738 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.09 tokens | now=2.32/9
+INFO:security:[RL] ALLOW #16: test-user-353:127.0.0.1 | window=16/37 | tokens=1.32
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60766 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=1.34/9
+INFO:security:[RL] ALLOW #17: test-user-353:127.0.0.1 | window=17/37 | tokens=0.34
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60752 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=0.35/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.35 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60788 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.36/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.36 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60774 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=0.39/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.39 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60802 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=0.40/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.40 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071337}
+INFO:     127.0.0.1:60804 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +324.36 tokens | now=9.00/9
+INFO:security:[RL] ALLOW #18: test-user-353:127.0.0.1 | window=18/37 | tokens=8.00
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51012 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.05 tokens | now=8.05/9
+INFO:security:[RL] ALLOW #19: test-user-353:127.0.0.1 | window=19/37 | tokens=7.05
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51030 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=7.07/9
+INFO:security:[RL] ALLOW #20: test-user-353:127.0.0.1 | window=20/37 | tokens=6.07
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51050 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=6.08/9
+INFO:security:[RL] ALLOW #21: test-user-353:127.0.0.1 | window=21/37 | tokens=5.08
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51020 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=5.11/9
+INFO:security:[RL] ALLOW #22: test-user-353:127.0.0.1 | window=22/37 | tokens=4.11
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51046 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=4.13/9
+INFO:security:[RL] ALLOW #23: test-user-353:127.0.0.1 | window=23/37 | tokens=3.13
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51058 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=3.14/9
+INFO:security:[RL] ALLOW #24: test-user-353:127.0.0.1 | window=24/37 | tokens=2.14
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51072 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.06 tokens | now=2.21/9
+INFO:security:[RL] ALLOW #25: test-user-353:127.0.0.1 | window=25/37 | tokens=1.21
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51088 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.04 tokens | now=1.25/9
+INFO:security:[RL] ALLOW #26: test-user-353:127.0.0.1 | window=26/37 | tokens=0.25
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51102 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.06 tokens | now=0.31/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.31 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51124 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.06 tokens | now=0.37/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.37 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51134 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.39/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.39 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51110 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=0.42/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.42 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51150 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.44/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.44 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51138 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=0.47/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.47 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51160 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=0.51/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.51 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51162 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.53/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.53 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51164 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.54/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.54 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071358}
+INFO:     127.0.0.1:51180 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +7.58 tokens | now=8.12/9
+INFO:security:[RL] ALLOW #27: test-user-353:127.0.0.1 | window=27/37 | tokens=7.12
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51184 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=7.14/9
+INFO:security:[RL] ALLOW #28: test-user-353:127.0.0.1 | window=28/37 | tokens=6.14
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51190 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=6.16/9
+INFO:security:[RL] ALLOW #29: test-user-353:127.0.0.1 | window=29/37 | tokens=5.16
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51198 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.05 tokens | now=5.21/9
+INFO:security:[RL] ALLOW #30: test-user-353:127.0.0.1 | window=30/37 | tokens=4.21
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51214 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=4.22/9
+INFO:security:[RL] ALLOW #31: test-user-353:127.0.0.1 | window=31/37 | tokens=3.22
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51218 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.07 tokens | now=3.29/9
+INFO:security:[RL] ALLOW #32: test-user-353:127.0.0.1 | window=32/37 | tokens=2.29
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51220 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=2.30/9
+INFO:security:[RL] ALLOW #33: test-user-353:127.0.0.1 | window=33/37 | tokens=1.30
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51234 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=1.32/9
+INFO:security:[RL] ALLOW #34: test-user-353:127.0.0.1 | window=34/37 | tokens=0.32
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51236 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.07 tokens | now=0.39/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.39 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51248 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.02 tokens | now=0.41/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.41 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51242 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.01 tokens | now=0.42/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.42 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51256 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.04 tokens | now=0.46/9
+WARNING:security:[RL] BLOCK (Burst): test-user-353:127.0.0.1 | tokens=0.46 | retry=1s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071359}
+INFO:     127.0.0.1:51268 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +136.55 tokens | now=9.00/9
+INFO:security:[RL] ALLOW #35: test-user-353:127.0.0.1 | window=35/37 | tokens=8.00
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.03 tokens | now=8.03/9
+INFO:security:[RL] ALLOW #36: test-user-353:127.0.0.1 | window=36/37 | tokens=7.03
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 200 OK
+INFO:security:[RL] REFILL: test-user-353:127.0.0.1 | +0.04 tokens | now=7.06/9
+INFO:security:[RL] ALLOW #37: test-user-353:127.0.0.1 | window=37/37 | tokens=6.06
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': False, 'reason': 'Input passed rate limiting', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34566 - "POST /secure-ai HTTP/1.1" 200 OK
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34566 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34566 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34582 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34566 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34586 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34582 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=29s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071368}
+INFO:     127.0.0.1:34590 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34582 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34590 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34586 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34582 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34566 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34560 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34590 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34554 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34586 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests
+WARNING:security:[RL] BLOCK (Window): test-user-353:127.0.0.1 | 37/37 in window | retry=28s
+INFO:security:{'event': 'rate_limit_check', 'user': 'test-user-353:127.0.0.1', 'blocked': True, 'reason': 'Rate limit exceeded', 'timestamp': 1771071369}
+INFO:     127.0.0.1:34582 - "POST /secure-ai HTTP/1.1" 429 Too Many Requests

@@ -1,0 +1,11 @@
+{"version": 2, "width": 29, "height": 10, "timestamp": 1771048215, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.008723, "o", "\u001b[H\u001b[2J\u001b[3J"]
+[0.511343, "o", "$ echo 'SESSION_VFZVSQW4'\r\n"]
+[0.713752, "o", "SESSION_VFZVSQW4\r\n"]
+[1.716866, "o", "$ ls -la\r\n"]
+[1.920439, "o", "total 20\r\ndrwxr-xr-x 2 paras paras 4096 Feb 14 09:50 .\r\ndrwxr-xr-x 6 paras paras 4096 Feb 14 09:47 ..\r\n-rwxr-xr-x 1 paras paras  472 Feb 14 09:49 run_session.sh\r\n-rw-r--r-- 1 paras paras  548 Feb 14 09:47 session.cast\r\n-rw-r--r-- 1 paras paras  291 Feb 14 09:50 session_retry.cast\r\n"]
+[2.923736, "o", "$ cat /etc/os-release | head -5\r\n"]
+[3.126872, "o", "PRETTY_NAME=\"Ubuntu 24.04.3 LTS\"\r\nNAME=\"Ubuntu\"\r\nVERSION_ID=\"24.04\"\r\nVERSION=\"24.04.3 LTS (Noble Numbat)\"\r\nVERSION_CODENAME=noble\r\n"]
+[4.130346, "o", "$ whoami\r\n"]
+[4.333248, "o", "paras\r\n"]
+[4.834802, "o", "exit\r\n"]

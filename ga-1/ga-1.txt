@@ -1,0 +1,41 @@
+--------------------------------------------------------------------
+Q1. 
+    {
+  "problems": [
+    "Problem 1: Undefined Classification Schema — The prompt asks for a 'quality level' without defining the scale (e.g., High/Medium/Low vs. 1-10) or the criteria for assignment, leading to arbitrary and subjective results.",
+    "Problem 2: Unspecified Output Format — The instruction 'Just give me the level' is vague and can result in varied outputs like 'High', 'Level 5', or 'The lead is high quality', making programmatic parsing difficult.",
+    "Problem 3: Lack of Context and Error Handling — There is no guidance on how to evaluate specific signals (like budget or timeline) or how to handle leads with missing or ambiguous information."
+  ],
+  "improvedPrompt": "You are an expert Sales Operations Analyst. Your task is to classify sales leads into specific quality tiers based on the BANT framework (Budget, Authority, Need, Timeline).\n\n### SCORING RUBRIC:\n- **High**: Meets all or most BANT criteria (Budget approved, Decision maker identified, Clear need, Timeline < 3 months).\n- **Medium**: Meets some criteria but has gaps (e.g., Budget undefined but strong Need and Authority).\n- **Low**: Missing critical criteria, long timeline (> 6 months), or low authority.\n- **Unqualified**: Spam, wrong contact info, or clearly irrelevant.\n\n### INPUT TEXT:\n\"Fortune 500 company requesting demo. Budget approved. Decision maker engaged. Timeline: 30 days.\"\n\n### INSTRUCTIONS:\n1. Analyze the input against the Scoring Rubric.\n2. If key information (like Budget or Authority) is missing, do not assume it exists; classify conservatively.\n3. Provide your response in strictly valid JSON format.\n\n### RESPONSE FORMAT:\n{\n  \"classification\": \"High\" | \"Medium\" | \"Low\" | \"Unqualified\",\n  \"confidence_score\": 0.0 to 1.0,\n  \"missing_info\": [\"list\", \"any\", \"missing\", \"BANT\", \"fields\"],\n  \"reasoning\": \"Brief explanation of the classification based on BANT analysis.\"\n}\n\n### EXAMPLES:\nInput: \"Student looking for research paper help.\"\nOutput: {\"classification\": \"Unqualified\", \"confidence_score\": 0.95, \"missing_info\": [\"Budget\", \"Authority\", \"Timeline\"], \"reasoning\": \"User is a student, not a business prospect. No budget or timeline indicated.\"}\n\nInput: \"VP of Engineering at Series B startup. Needs solution for Q3 audit.\"\nOutput: {\"classification\": \"High\", \"confidence_score\": 0.85, \"missing_info\": [\"Budget\"], \"reasoning\": \"Strong Authority (VP) and clear Timeline/Need (Q3 Audit). implied budget for compliance needs.\"}",
+  "improvements": [
+    "Defined Constraints & Rubric: Introduced the BANT framework and specific tiers (High, Medium, Low, Unqualified) to remove subjectivity and ensure consistent scoring.",
+    "Enforced JSON Structure: Specified a strict JSON output schema including fields for classification, confidence, missing info, and reasoning to ensure the output is machine-readable and parsable.",
+    "Added Robustness (Edge Cases & Examples): Included instructions on how to handle missing information (\"classify conservatively\") and provided few-shot examples to demonstrate how to handle both successful and unqualified leads."
+  ]
+}
+--------------------------------------------------------------------
+q2. Reply with "Yes" or "No": Is Linux an OS?
+
+--------------------------------------------------------------------
+q3. curl -sL "https://en.wikipedia.org/api/rest_v1/page/random/summary" | \
+  jq -r '.extract' | \
+  llm "Rewrite this summary for a 10-year-old audience"
+--------------------------------------------------------------------
+q4. Create the body of an asynchronous JavaScript function that fetches JSON from a 'url' variable. Parse the response and calculate the sum of the 'number' property for each item in the 'data' array. Return the calculated sum. If any error occurs during fetch or processing, return 0. Output only the code for the function body, with no markdown or function signatures.
+--------------------------------------------------------------------
+q5. https://v0-home-page-html-tau.vercel.app/
+--------------------------------------------------------------------
+q6. OUTPUT: 13,2685,206.54
+--------------------------------------------------------------------
+q7. {
+  "bugs": [
+    "Bug 1: Incorrect Order Logic — The function returns true if '@' and '.' exist anywhere, regardless of position (e.g., 'user.name@com' would fail valid checks if '.' was required after '@', but the original code passes it even if the '.' is before '@').",
+    "Bug 2: Missing Content Validation — It does not check for text before '@' (e.g., '@example.com' returns true) or text between '@' and '.' (e.g., 'user@.com' returns true).",
+    "Bug 3: Edge Case Failures — It accepts invalid formats like multiple '@' symbols, spaces, or '.' as the last character."
+  ],
+  "fixedCode": "function isValidEmail(email) {\n  // Regex: 1+ char not @/space, then @, then 1+ char not @/space, then ., then 1+ char not @/space\n  const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n  return emailRegex.test(email);\n}",
+  "testStrategy": "I would implement a comprehensive test suite covering:\n1. **Positive Cases**: Standard formats (user@example.com), subdomains (user@sub.example.com).\n2. **Negative Cases**: Missing parts (no local, no domain, no TLD), wrong order (. before @), sequential dots (..), and invalid characters (spaces, multiple @).\n3. **Boundary Analysis**: Single-character local/domain parts, very long strings.\n4. **Type Safety**: verifying input is a non-null string before processing."
+}
+--------------------------------------------------------------------
+q8. 
+--------------------------------------------------------------------
