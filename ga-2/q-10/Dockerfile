@@ -4,8 +4,9 @@ FROM python:3.11-slim
 RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user \
-    PATH=/home/user/.local/bin:$PATH \
-    APP_PORT=7007
+    PATH=/home/user/.local/bin:$PATH
+ARG APP_PORT=7007
+ENV APP_PORT=$APP_PORT
 
 WORKDIR $HOME/app
 
@@ -15,5 +16,5 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 EXPOSE 7007
 
-# Run uvicorn on fixed port 7007
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7007"]
+# Use the environment variable in the CMD
+CMD uvicorn main:app --host 0.0.0.0 --port $APP_PORT
