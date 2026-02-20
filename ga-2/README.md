@@ -76,3 +76,11 @@
 - **Data Source:** `q-fastapi.csv`
 - **Implementation:** `ga-2/q-13/main.py`
 - **URL:** [http://127.0.0.1:8000/api](http://127.0.0.1:8000/api)
+
+## Question 14: eShopCo Latency API (Vercel)
+**Task:** Deploy a Python FastAPI endpoint on Vercel to process telemetry data.
+- **Endpoint:** `POST /api`
+- **Functionality:** Computes `avg_latency`, `p95_latency`, `avg_uptime`, and `breaches` for specified regions.
+- **Implementation:** `ga-2/q-14/main.py`
+- **Vercel Config:** `None (Auto-detect)`
+- **URL:** [https://tds-ga2-q14.vercel.app/api](https://tds-ga2-q14.vercel.app/api) (Placeholder - please deploy from ga-2/q-14/)
