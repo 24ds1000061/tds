@@ -1,19 +1,11 @@
 from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
 import json
 import os
 import math
 
 app = FastAPI()
 
-# Enable CORS correctly for wildcard origins
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# Note: CORS is handled by vercel.json headers at the gateway level
 
 # Load data once
 DATA_FILE = os.path.join(os.path.dirname(__file__), "data.json")
@@ -25,8 +17,6 @@ def calculate_p95(latencies):
         return 0.0
     sorted_latencies = sorted(latencies)
     n = len(sorted_latencies)
-    # 95th percentile using common spreadsheet method (rank = 0.95 * (n-1))
-    # or just simple index. Let's use the index method: n * 0.95
     idx = math.ceil(0.95 * n) - 1
     return sorted_latencies[max(0, idx)]
 
@@ -38,7 +28,6 @@ async def get_latency_metrics(request: Request):
 
     results = {}
     for region in regions:
-        # Filter data for this region
         region_data = [d for d in TELEMETRY_DATA if d["region"] == region]
         
         if not region_data:
