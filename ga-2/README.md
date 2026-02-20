@@ -44,3 +44,9 @@
 - **Files:** Created `requirements.txt` and `.github/dependabot.yml`.
 - **Config:** Weekly updates for the root directory with `deps` prefix.
 - **Repo URL:** [https://github.com/24ds1000061/TDS](https://github.com/24ds1000061/TDS)
+
+## Question 9: Docker Hub
+**Task:** Build and push a Docker image tagged with `24ds1000061`.
+- **Dockerfile:** Created in `ga-2/q-9/`.
+- **Workflow:** `.github/workflows/docker_q9.yml`.
+- **Image URL:** [https://hub.docker.com/repository/docker/parasuramaniitm/tds-q9/general](https://hub.docker.com/repository/docker/parasuramaniitm/tds-q9/general)
