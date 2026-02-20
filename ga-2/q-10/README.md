@@ -1,5 +1,5 @@
 ---
-title: GA2 Observability API
+title: ga2-a34366
 emoji: 🚀
 colorFrom: green
 colorTo: blue
